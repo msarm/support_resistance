@@ -27,7 +27,7 @@ setup(
         'scikit-learn==0.21.2',
         'pandas==0.25.0',
         'ZigZag==0.2.2',
-        'matplotlib==3.1.1',
+        'matplotlib==3.3.3'
     ],
     setup_requires=[
         'pytest-runner'
