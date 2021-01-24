@@ -24,7 +24,7 @@ setup(
     packages=find_packages(exclude=['contrib', 'docs', 'tests']),
 
     install_requires=[
-        'scikit-learn==0.21.2',
+        'scikit-learn==0.24.1',
         'pandas==1.1.4',
         'ZigZag==0.2.2',
         'matplotlib==3.3.3'
