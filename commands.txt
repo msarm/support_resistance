@@ -1,0 +1,25 @@
+
+python3 -m pip install --upgrade pip
+pip install wheel
+pip install twine
+python setup.py sdist bdist_wheel
+
+
+twine upload -r fxfeed dist/* --verbose   --skip-existing
+
+export SETUP_PY_MODULES="msarmIndicator"      
+export SETUP_VERSION="0.0.4"    
+
+ python -m setuppy_generator > setup.py
+
+ pip install -e .    
+
+ -i https://msarm.pkgs.visualstudio.com/tech.msarm.com/_packaging/fxfeed/pypi/simple/ 
+
+sudo vim  $HOME/.pypirc
+
+sudo vim $VIRTUAL_ENV/pip.conf    
+
+[global]
+index-url=https://fxfeedupload:kddn75pv6p46z7n7hyxcdb7p7gsoquxl7f2on6dov5bqz4jgia4a@msarm.pkgs.visualstudio.com/tech.msarm.com/_packaging/fxfeed/pypi/simple/
+extra-index-url=https://pypi.org/simple
