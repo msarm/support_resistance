@@ -9,7 +9,7 @@ with open(convert_path('pricelevels/version.py')) as metadata_file:
     exec(metadata_file.read(), metadata)
 
 setup(
-    name='pricelevels',
+    name='pricelevels2',
 
     version=metadata['__version__'],
     zip_safe=False,
